@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>darkbg.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{0,0},{960,640}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{960,640}}</string>
+                <key>sourceSize</key>
+                <string>{960,640}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>darkbg-hd.pvr.png</string>
+            <key>size</key>
+            <string>{964,644}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:6382dca9d09b58307c49ab5fd996642e:9ad40e745c37a2a3daa3ae5027f4a7e7:063883f7f1a899dea8009bdea024314c$</string>
+            <key>textureFileName</key>
+            <string>darkbg-hd.pvr.png</string>
+        </dict>
+    </dict>
+</plist>

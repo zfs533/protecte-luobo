@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "0adf732c-e545-4262-a59f-ea050ec7acf0",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Monsters02-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "d0000ae5-461e-43f2-b240-53664bb38343",
+      "rawTextureUuid": "0adf732c-e545-4262-a59f-ea050ec7acf0",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 4,
+      "trimY": 4,
+      "width": 422,
+      "height": 420,
+      "rawWidth": 430,
+      "rawHeight": 428,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

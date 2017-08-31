@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "94f288e1-fb6a-417f-89c3-6e6e06462007",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "thempopuplock-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "2451cf7e-4c99-4b20-bf18-107afb6684e6",
+      "rawTextureUuid": "94f288e1-fb6a-417f-89c3-6e6e06462007",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": 0,
+      "trimX": 6,
+      "trimY": 3,
+      "width": 1747,
+      "height": 661,
+      "rawWidth": 1756,
+      "rawHeight": 667,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

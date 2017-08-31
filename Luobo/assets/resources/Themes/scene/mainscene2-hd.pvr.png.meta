@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "62ddbcc2-acba-4768-bea8-a1de3542856a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "mainscene2-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "322e106e-550e-4cdd-9d04-34c19ffd6ab5",
+      "rawTextureUuid": "62ddbcc2-acba-4768-bea8-a1de3542856a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": -0.5,
+      "trimX": 4,
+      "trimY": 5,
+      "width": 1001,
+      "height": 555,
+      "rawWidth": 1010,
+      "rawHeight": 564,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

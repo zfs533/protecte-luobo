@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "ba728c0e-ecb4-4219-bcd5-abb3035c3257",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "darkbg-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "d88d221a-2ccc-4368-9af4-4a4376a9e241",
+      "rawTextureUuid": "ba728c0e-ecb4-4219-bcd5-abb3035c3257",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 960,
+      "height": 640,
+      "rawWidth": 964,
+      "rawHeight": 644,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

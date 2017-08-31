@@ -1,0 +1,31 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "monster",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.6,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "7f0bcbac-67a0-4161-97a1-f4bb029f9699"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "1177c987-2985-487c-bd6d-96fb7b79164e"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

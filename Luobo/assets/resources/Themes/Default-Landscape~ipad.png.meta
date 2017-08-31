@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "52e4293c-3701-4e0b-832a-7b562b32b90f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Default-Landscape~ipad": {
+      "ver": "1.0.3",
+      "uuid": "30adb006-5015-461e-b744-ce8e520ef18f",
+      "rawTextureUuid": "52e4293c-3701-4e0b-832a-7b562b32b90f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1024,
+      "height": 768,
+      "rawWidth": 1024,
+      "rawHeight": 768,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

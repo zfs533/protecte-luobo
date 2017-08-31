@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "a1917527-dbc9-4428-8d0f-e84e62a84a51",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "antiboss2-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "2211dff8-037e-4dc0-9fcc-13e3ccc24281",
+      "rawTextureUuid": "a1917527-dbc9-4428-8d0f-e84e62a84a51",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0.5,
+      "trimX": 4,
+      "trimY": 4,
+      "width": 1526,
+      "height": 2031,
+      "rawWidth": 1536,
+      "rawHeight": 2040,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

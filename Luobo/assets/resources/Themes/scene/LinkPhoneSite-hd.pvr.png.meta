@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "90a6fc9a-ce89-4f68-9ba1-03e5bf2808f1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "LinkPhoneSite-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "ba34e3a3-bc6f-4981-b867-525a66f81cc1",
+      "rawTextureUuid": "90a6fc9a-ce89-4f68-9ba1-03e5bf2808f1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -30,
+      "offsetY": 133,
+      "trimX": 4,
+      "trimY": 4,
+      "width": 960,
+      "height": 754,
+      "rawWidth": 1028,
+      "rawHeight": 1028,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

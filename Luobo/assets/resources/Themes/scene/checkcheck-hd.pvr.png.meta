@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "d37a7cde-0265-421f-80dd-2f3f3bd86783",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "checkcheck-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "313c367e-6bc6-496e-99c8-432b426d7fcd",
+      "rawTextureUuid": "d37a7cde-0265-421f-80dd-2f3f3bd86783",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1.5,
+      "offsetY": -0.5,
+      "trimX": 4,
+      "trimY": 5,
+      "width": 602,
+      "height": 1929,
+      "rawWidth": 613,
+      "rawHeight": 1938,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

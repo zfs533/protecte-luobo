@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "65d36d2a-b443-4d61-8988-7a3a429a221c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "TSun-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "6de69d0f-6bf2-45a5-9b6f-285097a82985",
+      "rawTextureUuid": "65d36d2a-b443-4d61-8988-7a3a429a221c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 4,
+      "trimY": 5,
+      "width": 612,
+      "height": 2035,
+      "rawWidth": 620,
+      "rawHeight": 2044,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

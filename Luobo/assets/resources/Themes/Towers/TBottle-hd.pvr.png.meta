@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "10300832-3e6d-4ad6-82dc-2dec6a0bad02",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "TBottle-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "ab42bf07-547a-4ac2-a1f2-bea987b2458a",
+      "rawTextureUuid": "10300832-3e6d-4ad6-82dc-2dec6a0bad02",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 0,
+      "trimX": 4,
+      "trimY": 4,
+      "width": 502,
+      "height": 130,
+      "rawWidth": 512,
+      "rawHeight": 138,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

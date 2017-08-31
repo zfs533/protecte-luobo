@@ -1,0 +1,31 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "fly_blue",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.6,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "fdde627d-61e5-4d11-b64d-ead7b6493189"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "c60c32f3-84d0-45fa-b261-6cc0d0b9ac0e"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

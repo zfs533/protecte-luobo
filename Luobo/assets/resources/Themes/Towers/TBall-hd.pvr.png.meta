@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "72f9727c-4fa7-404f-858b-d444a70ba574",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "TBall-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "820160d6-48ae-46c7-bddf-11a05908831b",
+      "rawTextureUuid": "72f9727c-4fa7-404f-858b-d444a70ba574",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 4,
+      "trimY": 5,
+      "width": 554,
+      "height": 493,
+      "rawWidth": 562,
+      "rawHeight": 504,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

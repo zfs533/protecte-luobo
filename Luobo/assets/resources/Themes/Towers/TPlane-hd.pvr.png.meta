@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "68b44633-81bd-43c2-a795-d74db87407ef",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "TPlane-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "1f78d4cd-3b93-4917-9a46-264365671077",
+      "rawTextureUuid": "68b44633-81bd-43c2-a795-d74db87407ef",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 4,
+      "trimY": 4,
+      "width": 1596,
+      "height": 181,
+      "rawWidth": 1604,
+      "rawHeight": 189,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

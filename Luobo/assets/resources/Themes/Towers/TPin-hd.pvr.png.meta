@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "74a62c39-393b-47fe-8676-08311cfb4e22",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "TPin-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "db049890-75ca-4195-9a98-49fdb0af3e67",
+      "rawTextureUuid": "74a62c39-393b-47fe-8676-08311cfb4e22",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 4,
+      "trimY": 4,
+      "width": 124,
+      "height": 486,
+      "rawWidth": 132,
+      "rawHeight": 494,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

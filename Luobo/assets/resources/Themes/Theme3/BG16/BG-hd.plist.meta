@@ -1,0 +1,34 @@
+{
+  "ver": "1.2.4",
+  "uuid": "9f1543a8-1d95-40c5-98eb-d57df78ad65f",
+  "rawTextureUuid": "7294917b-6022-4bfb-af39-bd3b1be19f79",
+  "size": {
+    "width": 964,
+    "height": 480
+  },
+  "type": "Texture Packer",
+  "subMetas": {
+    "BG-hd.pvr.ccz": {
+      "ver": "1.0.3",
+      "uuid": "efeeb046-809c-4bd8-a950-79dbc60ca235",
+      "rawTextureUuid": "7294917b-6022-4bfb-af39-bd3b1be19f79",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 960,
+      "height": 476,
+      "rawWidth": 960,
+      "rawHeight": 476,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    }
+  }
+}

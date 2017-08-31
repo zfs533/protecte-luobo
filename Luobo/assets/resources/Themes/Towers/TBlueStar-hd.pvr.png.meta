@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "8fb96d78-f836-40b8-845c-3a289b25fd2b",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "TBlueStar-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "33c234d3-7da9-4442-ad84-c9a5df302b40",
+      "rawTextureUuid": "8fb96d78-f836-40b8-845c-3a289b25fd2b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 4,
+      "trimY": 4,
+      "width": 908,
+      "height": 250,
+      "rawWidth": 916,
+      "rawHeight": 258,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

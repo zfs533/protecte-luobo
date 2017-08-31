@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "bf5a42fd-be4b-400a-bf1d-dad82ba7c616",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "weibo-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "5a96a8d7-1501-4d76-9975-b4049a50e391",
+      "rawTextureUuid": "bf5a42fd-be4b-400a-bf1d-dad82ba7c616",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 6,
+      "trimY": 6,
+      "width": 902,
+      "height": 100,
+      "rawWidth": 914,
+      "rawHeight": 112,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

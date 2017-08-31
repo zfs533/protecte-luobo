@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "fe7be219-f2f6-429e-a177-deedde77ce9e",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "gameover-qqewr-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "4ff55cc6-08ec-4efd-9093-a84dcd53295d",
+      "rawTextureUuid": "fe7be219-f2f6-429e-a177-deedde77ce9e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 1.5,
+      "trimX": 4,
+      "trimY": 4,
+      "width": 1113,
+      "height": 1991,
+      "rawWidth": 1122,
+      "rawHeight": 2002,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

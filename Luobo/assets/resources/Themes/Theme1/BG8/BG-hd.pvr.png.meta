@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "df7e3d1d-6537-4965-857d-67f65995af1c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "BG-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "e191d959-dbe9-419e-9c6b-62b75ad38361",
+      "rawTextureUuid": "df7e3d1d-6537-4965-857d-67f65995af1c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": -1.5,
+      "trimX": 2,
+      "trimY": 5,
+      "width": 882,
+      "height": 485,
+      "rawWidth": 888,
+      "rawHeight": 492,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

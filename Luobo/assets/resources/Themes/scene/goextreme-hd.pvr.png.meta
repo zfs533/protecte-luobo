@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "bed2235a-64f5-4a98-a7b2-a48a93e049b7",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "goextreme-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "20471eda-0e05-466a-bf54-5bd2cf18952d",
+      "rawTextureUuid": "bed2235a-64f5-4a98-a7b2-a48a93e049b7",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": 0,
+      "trimX": 5,
+      "trimY": 4,
+      "width": 1183,
+      "height": 1012,
+      "rawWidth": 1192,
+      "rawHeight": 1020,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

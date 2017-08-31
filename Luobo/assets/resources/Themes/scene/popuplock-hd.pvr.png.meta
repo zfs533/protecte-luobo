@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "635df2c1-e062-4b0b-9277-39d4739dd158",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "popuplock-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "d5a9332a-631c-4408-8c1c-5de8fecff1ed",
+      "rawTextureUuid": "635df2c1-e062-4b0b-9277-39d4739dd158",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1.5,
+      "offsetY": -0.5,
+      "trimX": 7,
+      "trimY": 5,
+      "width": 1089,
+      "height": 997,
+      "rawWidth": 1100,
+      "rawHeight": 1006,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

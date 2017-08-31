@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "e7ba8c60-6f7f-4085-9606-7b5321770dee",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "TSnow-hd.pvr": {
+      "ver": "1.0.3",
+      "uuid": "6604231e-4a3d-4c26-ac68-9a9be8a30995",
+      "rawTextureUuid": "e7ba8c60-6f7f-4085-9606-7b5321770dee",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0.5,
+      "offsetY": -0.5,
+      "trimX": 5,
+      "trimY": 6,
+      "width": 689,
+      "height": 1835,
+      "rawWidth": 698,
+      "rawHeight": 1846,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

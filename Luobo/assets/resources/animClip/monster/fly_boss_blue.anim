@@ -1,0 +1,31 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "fly_boss_blue",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.6,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "0866d9b3-c74b-444a-aaa9-b48caf364667"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "3de291bc-8e9e-4b3b-bbe4-28d43a753b68"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

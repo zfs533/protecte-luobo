@@ -1,0 +1,56 @@
+{
+  "ver": "1.2.4",
+  "uuid": "5ee319dd-20f5-4c0c-92b7-c641324c8f7f",
+  "rawTextureUuid": "51a8a325-71ed-42e2-8882-ca44a9c8902f",
+  "size": {
+    "width": 794,
+    "height": 444
+  },
+  "type": "Texture Packer",
+  "subMetas": {
+    "bossiscoming.png": {
+      "ver": "1.0.3",
+      "uuid": "284d8904-3380-49d0-9cf8-1da13a940cbd",
+      "rawTextureUuid": "51a8a325-71ed-42e2-8882-ca44a9c8902f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": 2,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 598,
+      "height": 436,
+      "rawWidth": 600,
+      "rawHeight": 440,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    },
+    "bossiscoming_CN.png": {
+      "ver": "1.0.3",
+      "uuid": "17f2b40d-a2b1-4f58-840e-d9d14ba583cd",
+      "rawTextureUuid": "51a8a325-71ed-42e2-8882-ca44a9c8902f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": true,
+      "offsetX": 0,
+      "offsetY": -48,
+      "trimX": 602,
+      "trimY": 2,
+      "width": 338,
+      "height": 186,
+      "rawWidth": 600,
+      "rawHeight": 440,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    }
+  }
+}
