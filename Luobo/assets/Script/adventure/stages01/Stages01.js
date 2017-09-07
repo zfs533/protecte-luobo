@@ -8,6 +8,7 @@
  * 8：选中Object
  */
 var Transition = require("Transition");
+var WeponData = require("WeponsData");
 cc.Class(
 {
     extends:cc.Component,
@@ -22,6 +23,7 @@ cc.Class(
         this.loadSprietAtlas();
         this.getPath();
         this.getPaoRects();
+        WeponData.loadWeponSpriteAtlas();
     },
     start:function()
     {
@@ -54,7 +56,9 @@ cc.Class(
         this.objects = [];
         this.monsterPrefab = null;
         this.monsterArr = [];
+        this.monsterCount = 0;
         this.zorder = 1000000;
+        this.ZORDER = 1000000;
         this.arrowCount = 0;
         this.paoRects = [];
         this.selectPrefab = null;
@@ -174,8 +178,12 @@ cc.Class(
         monster.setLocalZOrder(this.zorder--);
         monster.index = 0;
         monster.setPosition(this.pathArr[monster.index].pos);
-        monster.getComponent("Monster").setData(this.pathArr);
+        monster.getComponent("Monster").setData(this.pathArr,this);
         this.monsterArr.push(monster);
+        if(this.zorder<10)
+        {
+            this.zorder = this.ZORDER;
+        }
     },
     setArrow:function()
     {
@@ -275,23 +283,59 @@ cc.Class(
         select.parent = this.node;
         select.setPosition(pos);
         this.currentSelectedTag = select;
+        
+        this.showWenponBuyPanel(pos,rect.height);
     },
     checkTouchObjects:function(pos)
     {
         let arr = this.objects;
         for(let i = 0; i < arr.length; i++)
         {
-            arr[i].getComponent("Object").showOrHideBlood(false);
+            arr[i].getComponent("Object").showOrHidePoint(false);
             let bbox = arr[i].getBoundingBox();
             let box = cc.rect(bbox.x+cc.winSize.width/2,bbox.y+cc.winSize.height/2,bbox.width,bbox.height);
             if(cc.rectContainsPoint(box,pos))
             {
-                arr[i].getComponent("Object").showOrHideBlood(true);
+                arr[i].getComponent("Object").showOrHidePoint(true);
             }
         }
     },
     checkTouchMonster:function(pos)
     {
-
+        let arr = this.monsterArr;
+        for(var i = 0;i<arr.length;i++)
+        {
+            arr[i].getComponent("Monster").showOrHidePoint(false);
+            let bbox = arr[i].getBoundingBox();
+            let box = cc.rect(bbox.x+cc.winSize.width/2,bbox.y+cc.winSize.height/2,bbox.width,bbox.height);
+            if(cc.rectContainsPoint(box,pos))
+            {
+                arr[i].getComponent("Monster").showOrHidePoint(true);
+            }
+        }
+    },
+    removeMonsterFromArray:function(monster,monsterCount)
+    {
+        let count = monsterCount != null ? monsterCount : monster.getComponent("Monster").monsterCount;
+        for(let i = 0; i<this.monsterArr.length;i++)
+        {
+            let ms = this.monsterArr[i];
+            let ct = ms.getComponent("Monster").monsterCount;
+            if(ct == count)
+            {
+                this.monsterArr.splice(i,1);
+                break;
+            }
+        }
+        cc.log("monsterArr.length=> "+this.monsterArr.length);
+    },
+    showWenponBuyPanel:function(pos,offsetY)
+    {
+        cc.loader.loadRes("prefab/wepon/wenponBuyPanel",cc.Prefab,function(err,prefab)
+        {
+            let panel = cc.instantiate(prefab);
+            panel.parent = this.node;
+            panel.setPosition(pos.x,pos.y+offsetY);
+        }.bind(this));
     }
 });

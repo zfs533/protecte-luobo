@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "point",
+    "_name": "wenponBuyPanel",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -19,16 +19,10 @@
     "_components": [
       {
         "__id__": 2
-      },
-      {
-        "__id__": 3
-      },
-      {
-        "__id__": 4
       }
     ],
     "_prefab": {
-      "__id__": 5
+      "__id__": 3
     },
     "_id": "",
     "_opacity": 255,
@@ -47,8 +41,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 30,
-      "height": 36
+      "width": 0,
+      "height": 0
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -67,53 +61,7 @@
     "groupIndex": 0
   },
   {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "92c999ac-7049-4f52-8c77-40cb7e8daa22"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": {
-      "__uuid__": "330f3658-dec4-4f62-a891-c307677b5b8e"
-    }
-  },
-  {
-    "__type__": "cc.Animation",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "_defaultClip": {
-      "__uuid__": "03d3526e-37f0-4936-97a6-0020f6e7c69a"
-    },
-    "_clips": [
-      {
-        "__uuid__": "03d3526e-37f0-4936-97a6-0020f6e7c69a"
-      }
-    ],
-    "playOnLoad": true
-  },
-  {
-    "__type__": "0b3175p0+xPR4gkm3snoEhj",
+    "__type__": "c8495+XSb5L5KSJQxgOXKrF",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -127,9 +75,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "817897f4-2d99-4d2e-a0e4-78f9a083e3e2"
+      "__id__": 0
     },
-    "fileId": "16wHzT0rlEWowoLURsWiAm",
+    "fileId": "edgx/1nLNOBrYkMvNkZ9Bv",
     "sync": false
   }
 ]

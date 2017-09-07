@@ -9,6 +9,7 @@ cc.Class(
     start:function()
     {
         this.showOrHideBlood(false);
+        this.showOrHidePoint(false);
         this.playAnimationByIndex(0);
     },
     setLocalProperty:function()
@@ -18,6 +19,8 @@ cc.Class(
         this.animationn = animation;
         this.maxIndex = this.clips.length;
         this.pathIndex = 0;
+        this.parentt = null;
+        this.monsterCount = 0;
     },
     showOrHideBlood:function(bool)
     {
@@ -30,6 +33,17 @@ cc.Class(
             }.bind(this),5);
         }
     },
+    showOrHidePoint:function(bool)
+    {
+        this.node.getChildByName("point").opacity = bool ? 255 : 0;
+        if(bool)
+        {
+            this.scheduleOnce(function()
+            {
+                this.node.getChildByName("point").opacity = 0;
+            }.bind(this),5);
+        }
+    },
     playAnimationByIndex:function(index)
     {
         if(index>=this.maxIndex)
@@ -38,8 +52,11 @@ cc.Class(
         }
         this.animationn.play(this.clips[index].name);
     },
-    setData:function(path)
+    setData:function(path,parentt)
     {
+        this.monsterCount = parentt.monsterCount++;
+        cc.log("monsterCount=> "+parentt.monsterCount);
+        this.parentt = parentt;
         this.monsterMove(path);
     },
     monsterMove:function(path)
@@ -60,6 +77,7 @@ cc.Class(
     },
     onDestroy:function()
     {
+        this.parentt.removeMonsterFromArray(this,this.monsterCount);
         cc.log("monster destroy");
     }
 });
