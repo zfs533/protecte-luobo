@@ -79,7 +79,215 @@ var Wepon = cc.Class(
         {
             this.TSun = atlas;
         }.bind(this));
-    }
+    },
+    getSpriteFrameBytype:function(type)
+    {
+        let frame = null;
+        switch (type)
+        {
+            case this.TYPE[0]:
+            {
+                frame = this.TArrow.getSpriteFrame("Arrow01");
+                break;
+            }
+            case this.TYPE[1]:
+            {
+                frame = this.TBall.getSpriteFrame("Ball01");
+                break;
+            }
+            case this.TYPE[2]:
+            {
+                frame = this.TBlueStar.getSpriteFrame("BStar01");
+                break;
+            }
+            case this.TYPE[3]:
+            {
+                frame = this.TBottle.getSpriteFrame("Bottle01");
+                break;
+            }
+            case this.TYPE[4]:
+            {
+                frame = this.TFan.getSpriteFrame("Fan01");
+                break;
+            }
+            case this.TYPE[5]:
+            {
+                frame = this.TFireBottle.getSpriteFrame("FBottle01");
+                break;
+            }
+            case this.TYPE[6]:
+            {
+                frame = this.TPin.getSpriteFrame("Pin01");
+                break;
+            }
+            case this.TYPE[7]:
+            {
+                frame = this.TPlane.getSpriteFrame("Plane01");
+                break;
+            }
+            case this.TYPE[8]:
+            {
+                frame = this.TRocket.getSpriteFrame("Rocket01");
+                break;
+            }
+            case this.TYPE[9]:
+            {
+                frame = this.TShit.getSpriteFrame("Shit01");
+                break;
+            }
+            case this.TYPE[10]:
+            {
+                frame = this.TSnow.getSpriteFrame("Star01");
+                break;
+            }
+            case this.TYPE[11]:
+            {
+                frame = this.TSun.getSpriteFrame("Sun01");
+                break;
+            }
+            default:break;
+        }
+        return frame;
+    },
+    getNameBytype:function(type)
+    {
+        let frame = null;
+        switch (type)
+        {
+            case this.TYPE[0]:
+            {
+                frame = "Arrow";
+                break;
+            }
+            case this.TYPE[1]:
+            {
+                frame = "Ball";
+                break;
+            }
+            case this.TYPE[2]:
+            {
+                frame = "BStar";
+                break;
+            }
+            case this.TYPE[3]:
+            {
+                frame = "Bottle";
+                break;
+            }
+            case this.TYPE[4]:
+            {
+                frame = "Fan";
+                break;
+            }
+            case this.TYPE[5]:
+            {
+                frame = "FBottle";
+                break;
+            }
+            case this.TYPE[6]:
+            {
+                frame = "Pin";
+                break;
+            }
+            case this.TYPE[7]:
+            {
+                frame = "Plane";
+                break;
+            }
+            case this.TYPE[8]:
+            {
+                frame = "Rocket";
+                break;
+            }
+            case this.TYPE[9]:
+            {
+                frame = "Shit";
+                break;
+            }
+            case this.TYPE[10]:
+            {
+                frame = "Star";
+                break;
+            }
+            case this.TYPE[11]:
+            {
+                frame = "Sun";
+                break;
+            }
+            default:break;
+        }
+        var name = frame;
+        return name;
+    },
+    getSpriteFrameByName:function(type,name)
+    {
+        let frame = null;
+        switch (type)
+        {
+            case this.TYPE[0]:
+            {
+                frame = this.TArrow.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[1]:
+            {
+                frame = this.TBall.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[2]:
+            {
+                frame = this.TBlueStar.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[3]:
+            {
+                frame = this.TBottle.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[4]:
+            {
+                frame = this.TFan.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[5]:
+            {
+                frame = this.TFireBottle.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[6]:
+            {
+                frame = this.TPin.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[7]:
+            {
+                frame = this.TPlane.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[8]:
+            {
+                frame = this.TRocket.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[9]:
+            {
+                frame = this.TShit.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[10]:
+            {
+                frame = this.TSnow.getSpriteFrame(name);
+                break;
+            }
+            case this.TYPE[11]:
+            {
+                frame = this.TSun.getSpriteFrame(name);
+                break;
+            }
+            default:break;
+        }
+        return frame;
+    },
 });
 var wepon = wepon || new Wepon(); 
 module.exports = wepon;

@@ -2,7 +2,9 @@ var WeponData = require("WeponsData");
 cc.Class(
 {
     extends:cc.Component,
-    properties:{},
+    properties:{
+        parentt:null,        
+    },
     onLoad:function()
     {
         cc.loader.loadRes("prefab/wepon/weponBy",cc.Prefab,function(err,prefab)
@@ -14,11 +16,26 @@ cc.Class(
     {
 
     },
+    setParentt:function(parentt)
+    {
+        this.parentt = parentt;
+    },
     initProperty:function(prefab)
     {
         this.weponPrefab = prefab;
-        let wepon = cc.instantiate(prefab);
-        wepon.parent = this.node;
+        var gap = 10;
+        for(let i = 0; i < 3; i++)
+        {
+            let wepon = cc.instantiate(prefab);
+            wepon.getComponent("WenponBuy").showWeponByType(i+2,this.parentt,this.node.getPosition());
+            wepon.parent = this.node;
+            wepon.setPosition((wepon.width+gap)*i -(wepon.width+gap),0);
+        }
+    },
+    destroyPanel:function(parentt)
+    {
+        parentt.currentWenponBuyPanel = null;
+        this.node.destroy();
     },
     onDestroy:function(){},
 });

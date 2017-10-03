@@ -55,7 +55,6 @@ cc.Class(
     setData:function(path,parentt)
     {
         this.monsterCount = parentt.monsterCount++;
-        cc.log("monsterCount=> "+parentt.monsterCount);
         this.parentt = parentt;
         this.monsterMove(path);
     },
@@ -78,6 +77,5 @@ cc.Class(
     onDestroy:function()
     {
         this.parentt.removeMonsterFromArray(this,this.monsterCount);
-        cc.log("monster destroy");
     }
 });

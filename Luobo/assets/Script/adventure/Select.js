@@ -1,7 +1,7 @@
 cc.Class({
     extends: cc.Component,
-
     properties: {
+            time:5,
         // foo: {
         //    default: null,      // The default value will be used only when the component attaching
         //                           to a node for the first time
@@ -21,7 +21,11 @@ cc.Class({
     start:function()
     {
         this.node.on(cc.Node.EventType.TOUCH_START,this.touchEvent,this);
-        this.scheduleOnce(this.touchEvent,5);
+        this.scheduleOnce(this.touchEvent,this.time);
+    },
+    setTime:function(time)
+    {
+        this.time = time;
     },
     setParentt:function(parentt)
     {
@@ -30,6 +34,10 @@ cc.Class({
     touchEvent:function(event)
     {
         this.parentt.currentSelectedTag = null;
+        if(this.parentt.currentWenponBuyPanel)
+        {
+            this.parentt.currentWenponBuyPanel.getComponent("WenponBuyPanel").destroyPanel(this.parentt);
+        }
         this.node.destroy();
     }
     // called every frame, uncomment this function to activate update callback

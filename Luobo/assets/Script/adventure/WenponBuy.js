@@ -2,7 +2,11 @@ var WeponData = require("WeponsData");
 cc.Class(
 {
     extends:cc.Component,
-    properties:{},
+    properties:{
+        weponType:0,
+        parentt:null,
+        basePos:null,
+    },
     onLoad:function()
     {
         this.node.scale = 0;
@@ -13,64 +17,24 @@ cc.Class(
         let scaleTo1= cc.scaleTo(0.1,1,1);
         let sequence= cc.sequence(scaleTo,scaleTo1);
         this.node.runAction(sequence);
-        this.showWeponByType(3);
+        this.node.on(cc.Node.EventType.TOUCH_END,()=>{this.installWepon()});
     },
-    showWeponByType:function(type)
+    installWepon:function()
     {
-        let frame = null;
-        switch (type)
-        {
-            case WeponData.TYPE[0]:
-            {
-                break;
-            }
-            case WeponData.TYPE[1]:
-            {
-                break;
-            }
-            case WeponData.TYPE[2]:
-            {
-                break;
-            }
-            case WeponData.TYPE[3]:
-            {
-                frame = WeponData.TBottle.getSpriteFrame("Bottle01");
-                break;
-            }
-            case WeponData.TYPE[4]:
-            {
-                break;
-            }
-            case WeponData.TYPE[5]:
-            {
-                break;
-            }
-            case WeponData.TYPE[6]:
-            {
-                break;
-            }
-            case WeponData.TYPE[7]:
-            {
-                break;
-            }
-            case WeponData.TYPE[8]:
-            {
-                break;
-            }
-            case WeponData.TYPE[9]:
-            {
-                break;
-            }
-            case WeponData.TYPE[10]:
-            {
-                break;
-            }
-            case WeponData.TYPE[11]:
-            {
-                break;
-            }
-            default:break;
-        }
+        this.parentt.updateInstallState(true);
+        cc.loader.loadRes("prefab/wepon/gunturret",cc.Prefab,(err,prefab) => {
+            let turrent = cc.instantiate(prefab);
+            turrent.getComponent("Gunturrent").setGuntype(this.parentt,this.weponType);
+            turrent.setPosition(this.basePos.x,this.basePos.y-80);
+            this.parentt.node.addChild(turrent);
+        });
+    },
+    showWeponByType:function(type,parentt,pos)
+    {
+        this.weponType = type;
+        this.parentt = parentt;
+        this.basePos = pos;
+        let frame = WeponData.getSpriteFrameBytype(type);
         if(frame)
         {
             this.getComponent(cc.Sprite).spriteFrame = frame;

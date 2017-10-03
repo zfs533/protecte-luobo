@@ -23,6 +23,7 @@ cc.Class(
         this.loadSprietAtlas();
         this.getPath();
         this.getPaoRects();
+        this.showPaoRects();
         WeponData.loadWeponSpriteAtlas();
     },
     start:function()
@@ -63,6 +64,8 @@ cc.Class(
         this.paoRects = [];
         this.selectPrefab = null;
         this.currentSelectedTag = null;
+        this.currentWenponBuyPanel = null;
+        this.isInstalling = false;
     },
     loadMap:function()
     {
@@ -238,11 +241,29 @@ cc.Class(
             }
         }
     },
+    //展示可以安装炮塔的位置
+    showPaoRects:function()
+    {
+        // for(let i = 0; i < this.paoRects.length; i++)
+        // {
+        //     cc.loader.loadRes("prefab/select",cc.Prefab,function(err,prefab)
+        //     {
+        //         this.selectPrefab = prefab;
+        //         let rect = cc.size(80,80);
+        //         var pos = cc.p(this.paoRects[i].x-cc.winSize.width/2,this.paoRects[i].y-rect.height-cc.winSize.height/2);
+        //         let select = cc.instantiate(prefab);
+        //         select.getComponent("Select").setParentt(this);
+        //         select.parent = this.node;
+        //         select.setPosition(pos);
+        //     }.bind(this));
+        // }
+    },
     touchEvent:function(event)
     {
         let pos = event.getLocation();
         this.checkTouchObjects(pos);
         this.checkTouchMonster(pos);
+        this.checkSelectedTag();
         if(!this.paoRects){return;}
         for(let i = 0; i < this.paoRects.length;i++)
         {
@@ -255,8 +276,24 @@ cc.Class(
         }
         cc.log("无效点击区域");
     },
+    checkSelectedTag:function()
+    {
+        if(this.currentSelectedTag)
+        {
+            this.currentSelectedTag.getComponent("Select").touchEvent();
+        }
+        if(this.currentWenponBuyPanel)
+        {
+            this.currentWenponBuyPanel.getComponent("WenponBuyPanel").destroyPanel(this);
+        }
+    },
     addSelectTag:function(pos)
     {
+        if(this.isInstalling)
+        {
+            this.isInstalling = false;
+            return;
+        }
         if(!this.selectPrefab)
         {
             cc.loader.loadRes("prefab/select",cc.Prefab,function(err,prefab)
@@ -272,10 +309,6 @@ cc.Class(
     },
     layoutSelectTag:function(prefab,pos)
     {
-        if(this.currentSelectedTag)
-        {
-            this.currentSelectedTag.getComponent("Select").touchEvent();
-        }
         let rect = cc.size(80,80);
         pos = cc.p(Math.floor(pos.x/rect.width)*rect.width+rect.width/2-cc.winSize.width/2,Math.floor(pos.y/rect.height)*rect.height+rect.height/2-cc.winSize.height/2);
         let select = cc.instantiate(prefab);
@@ -327,7 +360,6 @@ cc.Class(
                 break;
             }
         }
-        cc.log("monsterArr.length=> "+this.monsterArr.length);
     },
     showWenponBuyPanel:function(pos,offsetY)
     {
@@ -335,7 +367,13 @@ cc.Class(
         {
             let panel = cc.instantiate(prefab);
             panel.parent = this.node;
+            panel.getComponent("WenponBuyPanel").setParentt(this);
             panel.setPosition(pos.x,pos.y+offsetY);
+            this.currentWenponBuyPanel = panel;
         }.bind(this));
+    },
+    updateInstallState:function(install)
+    {
+        this.isInstalling = install;
     }
 });
