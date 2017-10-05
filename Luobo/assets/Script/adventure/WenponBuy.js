@@ -26,7 +26,8 @@ cc.Class(
             let turrent = cc.instantiate(prefab);
             turrent.getComponent("Gunturrent").setGuntype(this.parentt,this.weponType);
             turrent.setPosition(this.basePos.x,this.basePos.y-80);
-            this.parentt.node.addChild(turrent);
+            this.parentt.node.addChild(turrent,this.parentt.ZORDER);
+            this.parentt.updateInstallState(false);
         });
     },
     showWeponByType:function(type,parentt,pos)

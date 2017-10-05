@@ -14,7 +14,7 @@ cc.Class(
     },
     start:function()
     {
-
+        
     },
     setParentt:function(parentt)
     {
@@ -24,10 +24,11 @@ cc.Class(
     {
         this.weponPrefab = prefab;
         var gap = 10;
-        for(let i = 0; i < 3; i++)
+        var turrentArr = [0,1,2];
+        for(let i = 0; i < turrentArr.length; i++)
         {
             let wepon = cc.instantiate(prefab);
-            wepon.getComponent("WenponBuy").showWeponByType(i+2,this.parentt,this.node.getPosition());
+            wepon.getComponent("WenponBuy").showWeponByType(turrentArr[i],this.parentt,this.node.getPosition());
             wepon.parent = this.node;
             wepon.setPosition((wepon.width+gap)*i -(wepon.width+gap),0);
         }

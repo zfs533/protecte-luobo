@@ -19,6 +19,7 @@ var Wepon = cc.Class(
         this.TShit = null;
         this.TSnow = null;
         this.TSun = null;
+        this.launchType = [0,1,2,3];//0：发出去；1：持续链接；2：间断链接；3：范围播放(太阳)；
         this.TYPE = (function()
         {
             let arr = [];
@@ -287,6 +288,76 @@ var Wepon = cc.Class(
             default:break;
         }
         return frame;
+    },
+    getLaunchType:function(type)
+    {
+        let frame = 0;
+        switch (type)
+        {
+            case this.TYPE[0]:
+            {
+                frame = this.launchType[0];
+                break;
+            }
+            case this.TYPE[1]:
+            {
+                frame = this.launchType[1];
+                break;
+            }
+            case this.TYPE[2]:
+            {
+                frame =  this.launchType[0];
+                break;
+            }
+            case this.TYPE[3]:
+            {
+                frame =  this.launchType[0];
+                break;
+            }
+            case this.TYPE[4]:
+            {
+                frame =  this.launchType[0];
+                break;
+            }
+            case this.TYPE[5]:
+            {
+                frame = this.launchType[1];
+                break;
+            }
+            case this.TYPE[6]:
+            {
+                frame = this.launchType[0];
+                break;
+            }
+            case this.TYPE[7]:
+            {
+                frame = this.launchType[2];
+                break;
+            }
+            case this.TYPE[8]:
+            {
+                frame = this.launchType[0];
+                break;
+            }
+            case this.TYPE[9]:
+            {
+                frame = this.launchType[0];
+                break;
+            }
+            case this.TYPE[10]:
+            {
+                frame = this.launchType[0];
+                break;
+            }
+            case this.TYPE[11]:
+            {
+                frame = this.launchType[3];
+                break;
+            }
+            default:break;
+        }
+        var type = frame;
+        return type;
     },
 });
 var wepon = wepon || new Wepon(); 

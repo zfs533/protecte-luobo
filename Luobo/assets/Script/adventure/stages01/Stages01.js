@@ -29,6 +29,14 @@ cc.Class(
     start:function()
     {
         this.node.on(cc.Node.EventType.TOUCH_END,this.touchEvent,this);
+        this.openCollisionDebug();
+    },
+    //打开碰撞调试模式,可以看到碰撞器矩形
+    openCollisionDebug:function()
+    {
+        cc.director.getCollisionManager().enabled = true;
+        cc.director.getCollisionManager().enabledDebugDraw = true;
+        cc.director.getCollisionManager().enabledDrawBoundingBox = true;
     },
     loadSprietAtlas:function()
     {
@@ -58,8 +66,8 @@ cc.Class(
         this.monsterPrefab = null;
         this.monsterArr = [];
         this.monsterCount = 0;
-        this.zorder = 1000000;
-        this.ZORDER = 1000000;
+        this.zorder = 20;
+        this.ZORDER = 20;
         this.arrowCount = 0;
         this.paoRects = [];
         this.selectPrefab = null;
@@ -156,7 +164,8 @@ cc.Class(
     {
         // let scheduler = cc.director.getScheduler();
         // scheduler.schedule(this.setMonsters,this,2.0);
-        this.schedule(this.setMonsters,0.8);
+        this.setMonsters();
+        this.schedule(this.setMonsters,6);
     },
     setMonsters:function()
     {
@@ -330,6 +339,7 @@ cc.Class(
             if(cc.rectContainsPoint(box,pos))
             {
                 arr[i].getComponent("Object").showOrHidePoint(true);
+                this.updateInstallState(false);
             }
         }
     },
@@ -344,6 +354,7 @@ cc.Class(
             if(cc.rectContainsPoint(box,pos))
             {
                 arr[i].getComponent("Monster").showOrHidePoint(true);
+                this.updateInstallState(false);
             }
         }
     },
@@ -366,7 +377,7 @@ cc.Class(
         cc.loader.loadRes("prefab/wepon/wenponBuyPanel",cc.Prefab,function(err,prefab)
         {
             let panel = cc.instantiate(prefab);
-            panel.parent = this.node;
+            this.node.addChild(panel,this.ZORDER+1);
             panel.getComponent("WenponBuyPanel").setParentt(this);
             panel.setPosition(pos.x,pos.y+offsetY);
             this.currentWenponBuyPanel = panel;

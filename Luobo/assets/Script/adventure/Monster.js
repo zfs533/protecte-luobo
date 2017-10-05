@@ -74,8 +74,23 @@ cc.Class(
         let sequence = cc.sequence(moveTo,callback);
         this.node.runAction(sequence);
     },
+    //销毁回调
     onDestroy:function()
     {
         this.parentt.removeMonsterFromArray(this,this.monsterCount);
-    }
+    },
+    //碰撞检测，前提需要在为节点添加碰撞器
+    onCollisionEnter:function(other,self)
+    {
+        let name = other.node.getName();
+        cc.log("name=> "+name);
+    },
+    onCollisionStay:function(other,self)
+    {
+
+    },
+    onCollisionExit:function(other,self)
+    {
+
+    },
 });
