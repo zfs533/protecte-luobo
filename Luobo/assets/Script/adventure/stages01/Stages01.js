@@ -9,6 +9,7 @@
  */
 var Transition = require("Transition");
 var WeponData = require("WeponsData");
+var MonsterData = require("MonsterData");
 cc.Class(
 {
     extends:cc.Component,
@@ -25,6 +26,7 @@ cc.Class(
         this.getPaoRects();
         this.showPaoRects();
         WeponData.loadWeponSpriteAtlas();
+        MonsterData.loadMonsterSpriteAtlas();
     },
     start:function()
     {

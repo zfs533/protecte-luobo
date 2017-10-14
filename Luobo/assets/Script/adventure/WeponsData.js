@@ -3,7 +3,6 @@ var Wepon = cc.Class(
     ctor:function()
     {
         this.initProperty();
-        this.loadWeponSpriteAtlas();
     },
     initProperty:function()
     {

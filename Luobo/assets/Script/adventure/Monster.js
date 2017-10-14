@@ -1,3 +1,4 @@
+var MonsterData = require("MonsterData");
 cc.Class(
 {
     extends:cc.Component,
@@ -14,43 +15,47 @@ cc.Class(
     },
     setLocalProperty:function()
     {
-        let animation = this.getComponent(cc.Animation);
-        this.clips = animation.getClips();
-        this.animationn = animation;
-        this.maxIndex = this.clips.length;
+        this.animationn = this.getComponent(cc.Animation);
         this.pathIndex = 0;
         this.parentt = null;
         this.monsterCount = 0;
+        this.bloodSize = 70;
     },
     showOrHideBlood:function(bool)
     {
-        this.node.getChildByName("bloodBar").opacity = bool ? 255 : 0;
+        let blood = this.node.getChildByName("bloodBar");
+        blood.opacity = bool ? 255 : 0;
         if(bool)
         {
+            blood.active = true;
             this.scheduleOnce(function()
             {
-                this.node.getChildByName("bloodBar").opacity = 0;
-            }.bind(this),5);
+                blood.opacity = 0;
+            }.bind(this),3);
         }
     },
     showOrHidePoint:function(bool)
     {
-        this.node.getChildByName("point").opacity = bool ? 255 : 0;
+        let point = this.node.getChildByName("point");
+        point.opacity = bool ? 255 : 0;
         if(bool)
         {
+            point.active = true;
             this.scheduleOnce(function()
             {
-                this.node.getChildByName("point").opacity = 0;
-            }.bind(this),5);
+                point.opacity = 0;
+            }.bind(this),3);
         }
     },
     playAnimationByIndex:function(index)
     {
-        if(index>=this.maxIndex)
-        {
-            index = this.maxIndex-1;
-        }
-        this.animationn.play(this.clips[index].name);
+        let frames = MonsterData.getMonsterFramesByIndex(index);
+        let clip = cc.AnimationClip.createWithSpriteFrames(frames);
+        clip.name = "clip";
+        clip.speed = 0.1;
+        clip.wrapMode = cc.WrapMode.Loop;
+        this.animationn.addClip(clip);
+        this.animationn.play(clip.name);
     },
     setData:function(path,parentt)
     {
@@ -83,7 +88,20 @@ cc.Class(
     onCollisionEnter:function(other,self)
     {
         let name = other.node.getName();
-        cc.log("name=> "+name);
+        if(name == "bullet")
+        {
+            let blood = this.node.getChildByName("bloodBar");
+            if(blood.opacity == 0)
+            {
+                this.showOrHideBlood(true);
+            }
+            var bNum = blood.width-5;
+            blood.width = bNum;
+            if(bNum<=0)
+            {
+                this.node.destroy();
+            }
+        }
     },
     onCollisionStay:function(other,self)
     {

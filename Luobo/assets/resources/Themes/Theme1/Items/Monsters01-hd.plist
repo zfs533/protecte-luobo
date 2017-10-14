@@ -348,13 +348,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>Monsters01-hd.pvr.png</string>
+            <string>Monsters01-hd.png</string>
             <key>size</key>
             <string>{516,564}</string>
             <key>smartupdate</key>
             <string>$TexturePacker:SmartUpdate:fbd7daf0d746edef053dd477981d0fa2:82407bf655f89cdc5d7525c44fa25f51:314a9151d949727102a21a86eeca9f72$</string>
             <key>textureFileName</key>
-            <string>Monsters01-hd.pvr.png</string>
+            <string>Monsters01-hd.png</string>
         </dict>
     </dict>
 </plist>

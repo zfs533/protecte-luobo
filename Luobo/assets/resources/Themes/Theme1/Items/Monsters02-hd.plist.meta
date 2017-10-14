@@ -1,7 +1,7 @@
 {
   "ver": "1.2.4",
-  "uuid": "a3fed7c0-0089-4ed2-a028-0a468d7fd527",
-  "rawTextureUuid": "c4a0c26f-1f69-4f21-8c4e-5e1f0539750c",
+  "uuid": "93f51269-be09-4a4b-9003-3ececb702a46",
+  "rawTextureUuid": "9deef664-7461-43ea-b34f-ac2a5debb415",
   "size": {
     "width": 422,
     "height": 414
@@ -10,8 +10,8 @@
   "subMetas": {
     "big_oldboss01.png": {
       "ver": "1.0.3",
-      "uuid": "b52a42a4-acfe-4016-bd8e-7c3ba6a62c92",
-      "rawTextureUuid": "c4a0c26f-1f69-4f21-8c4e-5e1f0539750c",
+      "uuid": "8c2ba0b2-768b-4db7-9895-42279a5676af",
+      "rawTextureUuid": "9deef664-7461-43ea-b34f-ac2a5debb415",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -32,8 +32,8 @@
     },
     "big_oldboss02.png": {
       "ver": "1.0.3",
-      "uuid": "9438d2d2-8c05-4774-b8b0-67cccba71549",
-      "rawTextureUuid": "c4a0c26f-1f69-4f21-8c4e-5e1f0539750c",
+      "uuid": "61bc5532-e524-443a-b918-d4f5304980fc",
+      "rawTextureUuid": "9deef664-7461-43ea-b34f-ac2a5debb415",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -54,8 +54,8 @@
     },
     "fat_oldboss01.png": {
       "ver": "1.0.3",
-      "uuid": "2bf4ba85-5b2c-42ac-a7ee-dda4d2b14516",
-      "rawTextureUuid": "c4a0c26f-1f69-4f21-8c4e-5e1f0539750c",
+      "uuid": "4798a1a2-23e2-419f-937f-0f8caef3cf30",
+      "rawTextureUuid": "9deef664-7461-43ea-b34f-ac2a5debb415",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -76,8 +76,8 @@
     },
     "fat_oldboss02.png": {
       "ver": "1.0.3",
-      "uuid": "22cfec4b-667c-4648-99a4-b4c37b63533c",
-      "rawTextureUuid": "c4a0c26f-1f69-4f21-8c4e-5e1f0539750c",
+      "uuid": "6f15422d-9e36-4efe-a5be-ab86b8bc64dc",
+      "rawTextureUuid": "9deef664-7461-43ea-b34f-ac2a5debb415",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -98,8 +98,8 @@
     },
     "fly_oldboss01.png": {
       "ver": "1.0.3",
-      "uuid": "953faeca-342a-4bcc-bf0b-7f0518dd24cd",
-      "rawTextureUuid": "c4a0c26f-1f69-4f21-8c4e-5e1f0539750c",
+      "uuid": "607c1aa4-47f9-4ba9-9381-4895b7d69b45",
+      "rawTextureUuid": "9deef664-7461-43ea-b34f-ac2a5debb415",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": true,
@@ -120,8 +120,8 @@
     },
     "fly_oldboss02.png": {
       "ver": "1.0.3",
-      "uuid": "8d8c32ae-ff96-4bc1-8e32-52ea5c0d5dea",
-      "rawTextureUuid": "c4a0c26f-1f69-4f21-8c4e-5e1f0539750c",
+      "uuid": "b93ebd44-59fe-4fb8-9cc3-9df54366ac98",
+      "rawTextureUuid": "9deef664-7461-43ea-b34f-ac2a5debb415",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -142,8 +142,8 @@
     },
     "land_oldboss01.png": {
       "ver": "1.0.3",
-      "uuid": "832e6018-8425-4572-a70d-58d0f431d7ef",
-      "rawTextureUuid": "c4a0c26f-1f69-4f21-8c4e-5e1f0539750c",
+      "uuid": "0891acc7-dd86-4325-9272-0a75d862358b",
+      "rawTextureUuid": "9deef664-7461-43ea-b34f-ac2a5debb415",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": true,
@@ -164,8 +164,8 @@
     },
     "land_oldboss02.png": {
       "ver": "1.0.3",
-      "uuid": "dc797d5a-e0f3-475b-aa23-9f8b9c938a34",
-      "rawTextureUuid": "c4a0c26f-1f69-4f21-8c4e-5e1f0539750c",
+      "uuid": "80602cde-ecb4-45e1-b72d-4b72d59ce3eb",
+      "rawTextureUuid": "9deef664-7461-43ea-b34f-ac2a5debb415",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": true,

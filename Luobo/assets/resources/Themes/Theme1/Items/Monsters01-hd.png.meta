@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "8afea717-c508-4473-af99-50212c8611c6",
+  "uuid": "2eaf75fa-9396-467e-a0a7-aaf94a6fb8a6",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "Monsters01-hd.pvr": {
+    "Monsters01-hd": {
       "ver": "1.0.3",
-      "uuid": "6f1fadfe-3f2a-478d-a3b9-c723ad4fe358",
-      "rawTextureUuid": "8afea717-c508-4473-af99-50212c8611c6",
+      "uuid": "16750571-da55-4695-996c-bfdf08e2f7b9",
+      "rawTextureUuid": "2eaf75fa-9396-467e-a0a7-aaf94a6fb8a6",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
