@@ -14,7 +14,23 @@ cc.Class(
     },
     start:function()
     {
-        
+        let self = this;
+        this.listeners = { 
+            event: cc.EventListener.TOUCH_ONE_BY_ONE, 
+            swallowTouches:true,
+            onTouchBegan: function (touches, event) {
+                self.destroyPanel(self.parentt);
+                return true;
+            }, 
+            onTouchMoved: function (touches, event) { 
+                cc.log('Touch Moved: ' + event); 
+            }, 
+            onTouchEnded: function (touches, event) { 
+                cc.log('Touch Ended: ' + event); 
+            }
+        } 
+        // 绑定单点触摸事件 
+        cc.eventManager.addListener(this.listeners, this.node);
     },
     setParentt:function(parentt)
     {
@@ -35,8 +51,15 @@ cc.Class(
     },
     destroyPanel:function(parentt)
     {
-        parentt.currentWenponBuyPanel = null;
+        this.parentt = parentt;
+        if(parentt)
+        {
+            parentt.currentWenponBuyPanel = null;
+            this.parentt = null;
+        }
         this.node.destroy();
     },
-    onDestroy:function(){},
+    onDestroy:function()
+    {
+    },
 });
